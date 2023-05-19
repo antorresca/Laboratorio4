@@ -1,21 +1,21 @@
-Microchip MPLAB XC8 Compiler V2.40
+Microchip MPLAB XC8 Compiler V2.41
 
 Linker command line:
 
 -W-3 \
-  --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
-  -cn -h+dist/default/production\Laboratorio4.X.production.sym \
-  --cmf=dist/default/production\Laboratorio4.X.production.cmf -z -Q18F4550 \
-  -oC:\Users\Andres\AppData\Local\Temp\xcAsnfg.4 \
-  -Mdist/default/production/Laboratorio4.X.production.map \
-  --md=C:\Users\Andres\AppData\Local\Temp\xcAsnfg.dat -E1 -ver=XC8 Compiler \
-  -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
-  -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh -AABS1=00h-07FFh \
-  -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
-  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
-  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
-  -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh -ABIGSFR=0F60h-0FFFh \
-  -ACONFIG=0300000h-030000Dh -AIDLOC=0200000h-0200007h \
+  --edf=C:\Program Files\Microchip\xc8\v2.41\pic\dat\20230208172133_en.msgs \
+  -cn -h+dist/default/production\Laboratorio4.production.sym \
+  --cmf=dist/default/production\Laboratorio4.production.cmf -z -Q18F4550 \
+  -oC:\Users\OSQUIA~1\AppData\Local\Temp\xcAsg9c.\driver_tmp_3.obj \
+  -Mdist/default/production/Laboratorio4.production.map \
+  --md=C:\Users\OSQUIA~1\AppData\Local\Temp\xcAsg9c.\driver_tmp_0.dat -E1 \
+  -ver=XC8 Compiler -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
+  -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
+  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
+  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
+  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh \
+  -ABIGSFR=0F60h-0FFFh -ACONFIG=0300000h-030000Dh -AIDLOC=0200000h-0200007h \
   -AEEDATA=0F00000h-0F000FFh -peeprom_data=EEDATA \
   -preset_vec=00h,intcode=08h,intcodelo,powerup,init -pramtop=0800h \
   -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
@@ -24,8 +24,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Andres\AppData\Local\Temp\xcAsnfg.obj \
-  dist/default/production\Laboratorio4.X.production.obj 
+  C:\Users\OSQUIA~1\AppData\Local\Temp\xcAsg9c.\driver_tmp_9.obj \
+  dist/default/production\Laboratorio4.production.obj 
 
 Object code version is 3.11
 
@@ -34,12 +34,12 @@ Machine type is 18F4550
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Andres\AppData\Local\Temp\xcAsnfg.obj
+C:\Users\OSQUIA~1\AppData\Local\Temp\xcAsg9c.\driver_tmp_9.obj
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  E        E        4        4       0
                 reset_vec                             0        0        4        0       0
-dist/default/production\Laboratorio4.X.production.obj
+dist/default/production\Laboratorio4.production.obj
                 intcode                               8        8        6        4       0
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
@@ -251,6 +251,7 @@ _TRISD                     (abs)        000F95
 _TRISE                     (abs)        000F96
 _Tecla                     bssCOMRAM    00003A
 __HRAM                     (abs)        000000
+__H__absolute__            __absolute__ 000000
 __Habs1                    abs1         000000
 __Hbank0                   bank0        000000
 __Hbank1                   bank1        000000
@@ -338,6 +339,7 @@ __Htext7                   text7        000000
 __Htext8                   text8        000000
 __Htext9                   text9        000000
 __LRAM                     (abs)        000001
+__L__absolute__            __absolute__ 000000
 __Labs1                    abs1         000000
 __Lbank0                   bank0        000000
 __Lbank1                   bank1        000000
@@ -587,15 +589,25 @@ LibLCDXC8.h
 
 LibLCDXC8.h estimated size: 468
 
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-		___lldiv       		CODE           	1258	0000	130
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c estimated size: 130
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 		___wmul        		CODE           	1730	0000	38
 
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c estimated size: 38
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c estimated size: 38
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+		___lwdiv       		CODE           	153A	0000	82
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c estimated size: 82
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\__lldiv.c
+		___lldiv       		CODE           	1258	0000	130
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\__lldiv.c estimated size: 130
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul32.c
+		___lmul        		CODE           	1438	0000	86
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul32.c estimated size: 86
 
 Laboratorio4.c
 		_ColorRGB      		CODE           	1358	0000	122
@@ -604,11 +616,6 @@ Laboratorio4.c
 		_LeerTeclado   		CODE           	10A2	0000	282
 
 Laboratorio4.c estimated size: 2692
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-		___lwmod       		CODE           	16B4	0000	66
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c estimated size: 66
 
 shared
 		i2_MensajeLCD_Word		CODE           	15DA	0000	78
@@ -621,18 +628,13 @@ shared
 
 shared estimated size: 334
 
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+		___lwmod       		CODE           	16B4	0000	66
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c estimated size: 66
+
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\llmod.c
 		___llmod       		CODE           	13D2	0000	102
 
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c estimated size: 102
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-		___lmul        		CODE           	1438	0000	86
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c estimated size: 86
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-		___lwdiv       		CODE           	153A	0000	82
-
-C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c estimated size: 82
+C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\llmod.c estimated size: 102
 

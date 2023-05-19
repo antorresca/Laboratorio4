@@ -3,47 +3,47 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 3 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 3 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 3 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 3 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul64.c
 [v ___omul __omul `(ul  1 e 4 0 ]
-"29 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
+"31 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\Laboratorio4.c
 [v _main main `(v  1 e 1 0 ]
-"206
+"209
 [v _LeerTeclado LeerTeclado `(uc  1 e 1 0 ]
-"240
+"243
 [v _ColorRGB ColorRGB `(v  1 e 1 0 ]
-"273
+"276
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"60 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"60 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\LibLCDXC8.h
 [v _EnviaDato EnviaDato `(v  1 e 1 0 ]
 [v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
 "72
@@ -65,102 +65,102 @@
 "293
 [v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 [v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
-"3074 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f4550.h
+"3073 C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic18f4550.h
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
-"3186
+"3185
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-"3264
+"3263
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-"3626
+"3625
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-"3848
+"3847
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-"4002
+"4001
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
-"4224
+"4223
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-"6582
+"6581
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-"7987
+"7986
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
-"8070
+"8069
 [v _T0CON T0CON `VEuc  1 e 1 @4053 ]
-"8140
+"8139
 [v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
-"9746
+"9745
 [v _GIE GIE `VEb  1 e 0 @32663 ]
-"10016
+"10015
 [v _LATE0 LATE0 `VEb  1 e 0 @31848 ]
-"10019
+"10018
 [v _LATE1 LATE1 `VEb  1 e 0 @31849 ]
-"10022
+"10021
 [v _LATE2 LATE2 `VEb  1 e 0 @31850 ]
-"10247
+"10246
 [v _PD PD `VEb  1 e 0 @32386 ]
-"10376
+"10375
 [v _RB4 RB4 `VEb  1 e 0 @31756 ]
-"10379
+"10378
 [v _RB5 RB5 `VEb  1 e 0 @31757 ]
-"10382
+"10381
 [v _RB6 RB6 `VEb  1 e 0 @31758 ]
-"10385
+"10384
 [v _RB7 RB7 `VEb  1 e 0 @31759 ]
-"10397
+"10396
 [v _RBPU RBPU `VEb  1 e 0 @32655 ]
-"10424
+"10423
 [v _RC6 RC6 `VEb  1 e 0 @31766 ]
-"10517
+"10516
 [v _RI RI `VEb  1 e 0 @32388 ]
-"10817
+"10816
 [v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
-"10820
+"10819
 [v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
-"10826
+"10825
 [v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
-"10871
+"10870
 [v _TO TO `VEb  1 e 0 @32387 ]
-"12 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
+"14 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\Laboratorio4.c
 [v _Tecla Tecla `uc  1 e 1 0 ]
-"13
-[v _partdecl partdecl `ul  1 e 4 0 ]
-"14
-[v _r r `ul  1 e 4 0 ]
 "15
-[v _n1 n1 `ui  1 e 2 0 ]
+[v _partdecl partdecl `ul  1 e 4 0 ]
 "16
-[v _n2 n2 `ui  1 e 2 0 ]
+[v _r r `ul  1 e 4 0 ]
 "17
-[v _i i `ui  1 e 2 0 ]
+[v _n1 n1 `ui  1 e 2 0 ]
 "18
-[v _m m `ul  1 e 4 0 ]
+[v _n2 n2 `ui  1 e 2 0 ]
 "19
-[v _op op `uc  1 e 1 0 ]
+[v _i i `ui  1 e 2 0 ]
 "20
-[v _n1c n1c `uc  1 e 1 0 ]
+[v _m m `ul  1 e 4 0 ]
 "21
-[v _n2c n2c `uc  1 e 1 0 ]
+[v _op op `uc  1 e 1 0 ]
 "22
-[v _color color `ui  1 e 2 0 ]
+[v _n1c n1c `uc  1 e 1 0 ]
 "23
-[v _contador contador `ui  1 e 2 0 ]
+[v _n2c n2c `uc  1 e 1 0 ]
 "24
-[v _verificador verificador `i  1 e 2 0 ]
+[v _color color `ui  1 e 2 0 ]
 "25
+[v _contador contador `ui  1 e 2 0 ]
+"26
+[v _verificador verificador `i  1 e 2 0 ]
+"27
 [v _flag flag `uc  1 e 1 0 ]
-"35 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"35 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\LibLCDXC8.h
 [v _interfaz interfaz `uc  1 e 1 0 ]
-"29 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
+"31 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\Laboratorio4.c
 [v _main main `(v  1 e 1 0 ]
 {
-"179
+"182
 [v main@k k `i  1 a 2 30 ]
-"177
+"180
 [v main@j j `i  1 a 2 34 ]
-"150
+"153
 [v main@i i `i  1 a 2 32 ]
-"203
+"206
 } 0
-"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -170,7 +170,7 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 15 ]
 "53
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "10
@@ -180,7 +180,7 @@
 [v ___lwmod@divisor divisor `ui  1 p 2 15 ]
 "25
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
@@ -192,7 +192,7 @@
 [v ___lwdiv@divisor divisor `ui  1 p 2 21 ]
 "30
 } 0
-"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
@@ -202,7 +202,7 @@
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 17 ]
 "129
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
 {
 "10
@@ -212,7 +212,7 @@
 [v ___llmod@divisor divisor `ul  1 p 4 17 ]
 "25
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "10
@@ -224,7 +224,7 @@
 [v ___lldiv@divisor divisor `ul  1 p 4 17 ]
 "30
 } 0
-"245 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"245 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\LibLCDXC8.h
 [v _MensajeLCD_Word MensajeLCD_Word `(v  1 e 1 0 ]
 {
 "249
@@ -242,12 +242,12 @@
 [v EscribeLCD_c@a a `uc  1 a 1 17 ]
 "154
 } 0
-"206 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
+"209 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\Laboratorio4.c
 [v _LeerTeclado LeerTeclado `(uc  1 e 1 0 ]
 {
-"238
+"241
 } 0
-"72 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"72 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\LibLCDXC8.h
 [v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
 {
 "105
@@ -287,17 +287,17 @@
 {
 "112
 } 0
-"240 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
+"243 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\Laboratorio4.c
 [v _ColorRGB ColorRGB `(v  1 e 1 0 ]
 {
-"271
+"274
 } 0
-"273
+"276
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"291
+"296
 } 0
-"245 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"245 C:\Users\Osqui Alvareto\Documents\GitHub\Laboratorio4\LibLCDXC8.h
 [v i2_MensajeLCD_Word MensajeLCD_Word `(v  1 e 1 0 ]
 {
 "249
