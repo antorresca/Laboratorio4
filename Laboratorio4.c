@@ -25,6 +25,19 @@ unsigned int color = 0;
 unsigned int contador = 0;
 int verificador = 0;
 bool flag = false;
+
+    unsigned char heart[]={
+    0b00000000,
+    0b00011011,
+    0b00011111,
+    0b00011111,
+    0b00001110,
+    0b00000100,
+    0b00000000,
+    0b00000000
+    };
+
+
 unsigned char LeerTeclado(void); //Declarar funcion para lectura de matricial
 void ColorRGB(void);
 
@@ -59,8 +72,16 @@ void main(void){
         MensajeLCD_Word("MCLR");
         }
     }
-    __delay_ms(2000); //Retraso para evitar errores
+    __delay_ms(1000); //Retraso para evitar errores
     BorraLCD(); 
+    NuevoCaracter(0,heart);
+    DireccionaLCD(0x82);
+    EscribeLCD_c(0);
+    MensajeLCD_Word("Bienvenido");
+    EscribeLCD_c(0);
+    __delay_ms(1500);
+    DireccionaLCD(0x80); //Colocar el cursor en la primera posicion de primera fila
+    MensajeLCD_Word("                "); //Mandar mensaje vacio para limpiar
     while(1){
         LATB=0B00000000;
         verificador = 0;
