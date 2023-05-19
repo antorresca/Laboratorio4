@@ -12,14 +12,14 @@
   0h - 3h		(dist/default/production\Laboratorio4.X.production.hex)
   8h - 11h		(dist/default/production\Laboratorio4.X.production.hex)
   800h - 834h		(dist/default/production\Laboratorio4.X.production.hex)
-  836h - 17DFh		(dist/default/production\Laboratorio4.X.production.hex)
+  836h - 1849h		(dist/default/production\Laboratorio4.X.production.hex)
   200000h - 200007h		(dist/default/production\Laboratorio4.X.production.hex)
   300000h - 30000Dh		(dist/default/production\Laboratorio4.X.production.hex)
  Unused ranges:
   4h - 7h
   12h - 7FFh
   835h - 835h
-  17E0h - 1FFFFFh
+  184Ah - 1FFFFFh
   200008h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -286,6 +286,13 @@
 000017B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000017C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000017D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000017E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000017F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001800 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001810 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001820 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001830 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001840 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- --
 ----------------------------------------------------------

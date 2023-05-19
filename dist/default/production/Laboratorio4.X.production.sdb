@@ -37,32 +37,34 @@
 [v ___omul __omul `(ul  1 e 4 0 ]
 "29 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
 [v _main main `(v  1 e 1 0 ]
-"206
+"220
 [v _LeerTeclado LeerTeclado `(uc  1 e 1 0 ]
-"240
+"254
 [v _ColorRGB ColorRGB `(v  1 e 1 0 ]
-"273
+"287
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"60 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"58 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
 [v _EnviaDato EnviaDato `(v  1 e 1 0 ]
 [v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
-"72
+"70
 [v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
-"106
+"104
 [v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
 [v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
-"113
+"111
 [v _BorraLCD BorraLCD `(v  1 e 1 0 ]
 [v i2_BorraLCD BorraLCD `(v  1 e 1 0 ]
-"146
+"140
+[v _NuevoCarac NuevoCarac `(v  1 e 1 0 ]
+"148
 [v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
 [v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
-"245
+"247
 [v _MensajeLCD_Word MensajeLCD_Word `(v  1 e 1 0 ]
 [v i2_MensajeLCD_Word MensajeLCD_Word `(v  1 e 1 0 ]
-"257
+"259
 [v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
-"293
+"295
 [v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 [v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 "3074 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f4550.h
@@ -147,18 +149,22 @@
 [v _verificador verificador `i  1 e 2 0 ]
 "25
 [v _flag flag `uc  1 e 1 0 ]
-"35 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"33 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
 [v _interfaz interfaz `uc  1 e 1 0 ]
 "29 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
 [v _main main `(v  1 e 1 0 ]
 {
-"179
-[v main@k k `i  1 a 2 30 ]
-"177
-[v main@j j `i  1 a 2 34 ]
-"150
-[v main@i i `i  1 a 2 32 ]
-"203
+"193
+[v main@k k `i  1 a 2 8 ]
+"191
+[v main@j j `i  1 a 2 12 ]
+"164
+[v main@i i `i  1 a 2 10 ]
+"49
+[v main@heart heart `[8]uc  1 a 8 0 ]
+"46
+[v main@F3172 F3172 `[8]uc  1 s 8 F3172 ]
+"217
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
@@ -184,9 +190,9 @@
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 23 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 24 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 25 ]
+[v ___lwdiv@counter counter `uc  1 a 1 23 ]
 "7
 [v ___lwdiv@dividend dividend `ui  1 p 2 19 ]
 [v ___lwdiv@divisor divisor `ui  1 p 2 21 ]
@@ -224,120 +230,132 @@
 [v ___lldiv@divisor divisor `ul  1 p 4 17 ]
 "30
 } 0
-"245 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
-[v _MensajeLCD_Word MensajeLCD_Word `(v  1 e 1 0 ]
+"140 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+[v _NuevoCarac NuevoCarac `(v  1 e 1 0 ]
 {
-"249
-[v MensajeLCD_Word@i i `i  1 a 2 20 ]
-"245
-[v MensajeLCD_Word@a a `*.31uc  1 p 1 18 ]
-"255
-} 0
+[v NuevoCarac@ubicacion ubicacion `uc  1 a 1 wreg ]
+"142
+[v NuevoCarac@i i `uc  1 a 1 20 ]
+"140
+[v NuevoCarac@ubicacion ubicacion `uc  1 a 1 wreg ]
+[v NuevoCarac@mapeo mapeo `*.30uc  1 p 1 18 ]
+[v NuevoCarac@ubicacion ubicacion `uc  1 a 1 19 ]
 "146
-[v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
-{
-[v EscribeLCD_c@a a `uc  1 a 1 wreg ]
-[v EscribeLCD_c@a a `uc  1 a 1 wreg ]
-"150
-[v EscribeLCD_c@a a `uc  1 a 1 17 ]
-"154
 } 0
-"206 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
-[v _LeerTeclado LeerTeclado `(uc  1 e 1 0 ]
-{
-"238
-} 0
-"72 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
-[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
-{
-"105
-} 0
-"113
-[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
-{
-"119
-} 0
-"257
+"259
 [v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
 {
 [v DireccionaLCD@a a `uc  1 a 1 wreg ]
 [v DireccionaLCD@a a `uc  1 a 1 wreg ]
-"260
+"262
 [v DireccionaLCD@a a `uc  1 a 1 17 ]
-"264
+"266
 } 0
-"60
+"247
+[v _MensajeLCD_Word MensajeLCD_Word `(v  1 e 1 0 ]
+{
+"251
+[v MensajeLCD_Word@i i `i  1 a 2 20 ]
+"247
+[v MensajeLCD_Word@a a `*.31uc  1 p 1 18 ]
+"257
+} 0
+"148
+[v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+{
+[v EscribeLCD_c@a a `uc  1 a 1 wreg ]
+[v EscribeLCD_c@a a `uc  1 a 1 wreg ]
+"152
+[v EscribeLCD_c@a a `uc  1 a 1 17 ]
+"156
+} 0
+"220 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
+[v _LeerTeclado LeerTeclado `(uc  1 e 1 0 ]
+{
+"252
+} 0
+"70 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
+{
+"103
+} 0
+"111
+[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
+{
+"117
+} 0
+"58
 [v _EnviaDato EnviaDato `(v  1 e 1 0 ]
 {
 [v EnviaDato@a a `uc  1 a 1 wreg ]
 [v EnviaDato@a a `uc  1 a 1 wreg ]
 [v EnviaDato@a a `uc  1 a 1 16 ]
-"71
+"69
 } 0
-"293
+"295
 [v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 {
 [v RetardoLCD@a a `uc  1 a 1 wreg ]
 [v RetardoLCD@a a `uc  1 a 1 wreg ]
 [v RetardoLCD@a a `uc  1 a 1 14 ]
-"311
+"313
 } 0
-"106
+"104
 [v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
 {
-"112
+"110
 } 0
-"240 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
+"254 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\Laboratorio4.c
 [v _ColorRGB ColorRGB `(v  1 e 1 0 ]
 {
-"271
+"285
 } 0
-"273
+"287
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"291
+"305
 } 0
-"245 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
+"247 C:\Users\Andres\MPLABXProjects\Laboratorio4.X\LibLCDXC8.h
 [v i2_MensajeLCD_Word MensajeLCD_Word `(v  1 e 1 0 ]
 {
-"249
+"251
 [v i2MensajeLCD_Word@i i `i  1 a 2 7 ]
-"245
+"247
 [v i2MensajeLCD_Word@a a `*.31uc  1 p 1 5 ]
-"255
+"257
 } 0
-"146
+"148
 [v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
 {
 [v i2EscribeLCD_c@a a `uc  1 a 1 wreg ]
 [v i2EscribeLCD_c@a a `uc  1 a 1 wreg ]
-"150
+"152
 [v i2EscribeLCD_c@a a `uc  1 a 1 4 ]
-"154
+"156
 } 0
-"113
+"111
 [v i2_BorraLCD BorraLCD `(v  1 e 1 0 ]
 {
-"119
+"117
 } 0
-"60
+"58
 [v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
 {
 [v i2EnviaDato@a a `uc  1 a 1 wreg ]
 [v i2EnviaDato@a a `uc  1 a 1 wreg ]
 [v i2EnviaDato@a a `uc  1 a 1 3 ]
-"71
+"69
 } 0
-"293
+"295
 [v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
 {
 [v i2RetardoLCD@a a `uc  1 a 1 wreg ]
 [v i2RetardoLCD@a a `uc  1 a 1 wreg ]
 [v i2RetardoLCD@a a `uc  1 a 1 1 ]
-"311
+"313
 } 0
-"106
+"104
 [v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
 {
-"112
+"110
 } 0
