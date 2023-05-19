@@ -48,18 +48,6 @@ void main(void){
     //Para bajo consumo
     OSCCON = 0b11000100;
     //Fin de bajo conumo
-    //Nuevo caracter
-    unsigned char heart[]={
-    0b00000,
-    0b11011,
-    0b11111,
-    0b11111,
-    0b01110,
-    0b00100,
-    0b00000,
-    0b00000
-    };
-    //Fin de nuevo caracter
     BorraLCD(); //Limpiar el LCD
     if(TO == 1 & RI == 1){
         BorraLCD();
@@ -72,12 +60,10 @@ void main(void){
         }
     }
     __delay_ms(2000); //Retraso para evitar errores
-    BorraLCD();     
+    BorraLCD(); 
     while(1){
         LATB=0B00000000;
         verificador = 0;
-        NuevoCarac(0,heart);
-        EscribeLCD_c(0);
         Tecla = LeerTeclado();
         ColorRGB();
         if(Tecla=='C'){ //Limpiar la pantalla si se presiona [1][4] 

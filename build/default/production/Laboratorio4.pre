@@ -5725,7 +5725,7 @@ extern int printf(const char *, ...);
 # 15 "C:\Program Files\Microchip\xc8\v2.40\pic\include\c90\stdbool.h"
 typedef unsigned char bool;
 
-# 33 "LibLCDXC8.h"
+# 35 "LibLCDXC8.h"
 unsigned char interfaz=8;
 
 void ConfiguraLCD(unsigned char);
@@ -5743,7 +5743,7 @@ void EscribeLCD_c(unsigned char);
 void MensajeLCD_Word(char *);
 void DireccionaLCD(unsigned char);
 
-# 54
+# 56
 void ConfiguraLCD(unsigned char a){
 if(a==4 | a ==8)
 interfaz=a;
@@ -5809,15 +5809,7 @@ HabilitaLCD();
 RetardoLCD(2);
 }
 
-# 140
-void NuevoCarac(unsigned char ubicacion, unsigned char mapeo[]){
-DireccionaLCD(0x40+ubicacion);
-for(unsigned char i = 0;i<8;i++){
-EscribeLCD_c(mapeo[i] & 0x01);
-mapeo[i]>>=1;
-}
-}
-
+# 146
 void EscribeLCD_c(unsigned char a){
 
 
@@ -5828,7 +5820,7 @@ HabilitaLCD();
 RetardoLCD(4);
 }
 
-# 247
+# 245
 void MensajeLCD_Word(char* a){
 
 
@@ -5850,7 +5842,7 @@ HabilitaLCD();
 RetardoLCD(4);
 }
 
-# 295
+# 293
 void RetardoLCD(unsigned char a){
 switch(a){
 case 1: _delay((unsigned long)((15)*(1000000/4000.0)));
@@ -5915,18 +5907,6 @@ TMR0ON=1;
 
 OSCCON = 0b11000100;
 
-
-unsigned char heart[]={
-0b00000,
-0b11011,
-0b11111,
-0b11111,
-0b01110,
-0b00100,
-0b00000,
-0b00000
-};
-
 BorraLCD();
 if(TO == 1 & RI == 1){
 BorraLCD();
@@ -5943,8 +5923,6 @@ BorraLCD();
 while(1){
 LATB=0B00000000;
 verificador = 0;
-NuevoCarac(0,heart);
-EscribeLCD_c(0);
 Tecla = LeerTeclado();
 ColorRGB();
 if(Tecla=='C'){

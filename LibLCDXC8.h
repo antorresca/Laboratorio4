@@ -13,6 +13,8 @@ extern "C" {
 #endif
 
 
+
+
 #ifdef	__cplusplus
 }
 #endif
@@ -46,7 +48,7 @@ void EscribeLCD_c(unsigned char);
 //void EscribeLCD_d(double, unsigned char, unsigned char);
 void MensajeLCD_Word(char *);
 void DireccionaLCD(unsigned char);
-//void NuevoCarac(unsigned char, unsigned char);
+//void NuevoCaracter(unsigned char, unsigned char);
 //void FijaCursorLCD(unsigned char,unsigned char);
 //void DesplazaPantallaD(void);
 //void DesplazaPantallaI(void);
@@ -137,13 +139,9 @@ void ComandoLCD(unsigned char a){
 }
 */
 
-void NuevoCarac(unsigned char ubicacion, unsigned char mapeo[]){
-    DireccionaLCD(0x40+ubicacion);
-    for(unsigned char i = 0;i<8;i++){
-        EscribeLCD_c(mapeo[i] & 0x01);
-        mapeo[i]>>=1;
-    }
-}
+//void NuevoCaracter(unsigned char ubicacion, unsigned char mapeo[]){
+    
+//}
 
 void EscribeLCD_c(unsigned char a){
 //Función que escribe un caracter en la pantalla
