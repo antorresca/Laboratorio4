@@ -3,7 +3,9 @@
 #include<stdbool.h>
 #define _XTAL_FREQ 1000000 //Frecuencia de reloj
 #include "LibLCDXC8.h" //Libreria para uso de LCD
-#pragma config FOSC=INTOSC_EC //Sentencia para usar oscilador externo
+#pragma config FOSC=INTOSC_EC //Sentencia para usar oscilador interno
+//#pragma config FOSC=XT_XT // Sentencia para usar oscilador de cristal baja resonancia
+//#pragma config FOSC=EC_EC // Sentencia para usar oscilador externo
 #pragma config WDT=OFF //Apagar el perro guardian 
 #pragma config PBADEN=OFF
 #pragma config LVP=OFF
@@ -36,11 +38,12 @@ void main(void){
     InicializaLCD(); //Funcion para configuracion inicial del LCD
     //Timer0 interrupcion
     T0CON=0b10000010;
-    TMR0IF=0;
-    TMR0=49911;
-    TMR0IE=1;
-    GIE=1;
-    TMR0ON=1;
+    TMR0IF=0; //bandera empieza en cero para que la interrupcion permanezca apagada
+    TMR0=49911; //Precarga para el oscilador interno y generador de señales
+    //TMR0= 3036; //Precarga para el cristal de 4MHz
+    TMR0IE=1; //Habilita las interrupcuiones
+    GIE=1; //Activar las globales
+    TMR0ON=1; //Activa el Timer0 ¿Es necesaria?
     //Fin de configuracion para Timer0
     //Para bajo consumo
     OSCCON = 0b11000100;
@@ -270,13 +273,14 @@ void ColorRGB(void){
     color += 1;
 }
 
-void __interrupt() ISR(void){
+void __interrupt() ISR(void){ 
     if(TMR0IF==1){
         if(!verificador) contador = contador +1;
         else contador = 0;
         TMR0IF=0;
         LATE2 = !LATE2;
         TMR0 = 49911;
+        //TMR0= 3036; 
     }
     
     if(contador == 20){
