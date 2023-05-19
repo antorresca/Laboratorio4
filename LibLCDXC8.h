@@ -41,7 +41,7 @@ void InicializaLCD(void);
 void HabilitaLCD(void);
 void BorraLCD(void);
 //void CursorAInicio(void);
-//void ComandoLCD(unsigned char);
+void ComandoLCD(unsigned char);
 void EscribeLCD_c(unsigned char);
 //void EscribeLCD_n8(unsigned char, unsigned char);
 //void EscribeLCD_n16(unsigned int, unsigned char);
