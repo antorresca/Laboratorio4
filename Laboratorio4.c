@@ -26,14 +26,14 @@ unsigned int contador = 0;
 int verificador = 0;
 bool flag = false;
 
-    unsigned char heart[]={
+    unsigned char cara[]={
     0b00000000,
-    0b00011011,
-    0b00011111,
+    0b00001010,
+    0b00001010,
+    0b00001010,
+    0b00000000,
     0b00011111,
     0b00001110,
-    0b00000100,
-    0b00000000,
     0b00000000
     };
 
@@ -50,7 +50,7 @@ void main(void){
     RBPU=0; //Activar resistencias pull up
     InicializaLCD(); //Funcion para configuracion inicial del LCD
     //Timer0 interrupcion
-    T0CON=0b10000010;
+    T0CON=0b00000010;
     TMR0IF=0; //bandera empieza en cero para que la interrupcion permanezca apagada
     TMR0=49911; //Precarga para el oscilador interno y generador de se?ales
     //TMR0= 3036; //Precarga para el cristal de 4MHz
@@ -74,11 +74,12 @@ void main(void){
     }
     __delay_ms(1000); //Retraso para evitar errores
     BorraLCD(); 
-    NuevoCaracter(0,heart);
+    NuevoCaracter(0,cara);
     DireccionaLCD(0x82);
     EscribeLCD_c(0);
     MensajeLCD_Word("Bienvenido");
     EscribeLCD_c(0);
+    DireccionaLCD(0xC7);
     __delay_ms(1500);
     DireccionaLCD(0x80); //Colocar el cursor en la primera posicion de primera fila
     MensajeLCD_Word("                "); //Mandar mensaje vacio para limpiar
@@ -102,19 +103,20 @@ void main(void){
             MensajeLCD_Word("                "); //Mandar mensaje vacio para limpiar
             DireccionaLCD(0xC0);
             DireccionaLCD(0x80);
+            __delay_ms(100);
         }else{
             if(n1c==' '|n2c==' '|op==' '){ //Funciones si no se ha recibido nada
-                if(op==' ' & (Tecla=='+'|Tecla=='-'|Tecla=='/'|Tecla=='x'|Tecla!='=') & n1c != ' ' & n2c ==' '){
+                if(op==' ' & (Tecla=='+'|Tecla=='-'|Tecla=='/'|Tecla=='x'|Tecla=='!'|Tecla=='^') & Tecla!='=' & n1c != ' ' & n2c ==' '){
                     DireccionaLCD(0x81);
                     EscribeLCD_c(Tecla);
                     op = Tecla;                    
                     if(Tecla=='!') n2c = 'A';
-                }else if(n1c == ' ' & (Tecla!='+'|Tecla!='-'|Tecla!='/'|Tecla!='x'|Tecla!='='|Tecla!='C'|Tecla!='!'|Tecla!='^'|Tecla!='=') & op == ' '){
+                }else if(n1c == ' ' & (Tecla!='+' & Tecla!='-' & Tecla!='/' & Tecla!='x' & Tecla!='='& Tecla!='C' & Tecla!='!' & Tecla!='^' & Tecla!='=') & op == ' '){
                     DireccionaLCD(0x80);  
                     EscribeLCD_c(Tecla);
                     n1c=Tecla;
                     n1 = Tecla-'0';
-                }else if(n2c==' ' & op!=' ' & op!='!' & n1c != ' ' & (Tecla!='+'|Tecla!='-'|Tecla!='/'|Tecla!='x'|Tecla!='='|Tecla!='C'|Tecla!='!'|Tecla!='^'|Tecla!='=')){
+                }else if(n2c==' ' & op!=' ' & op!='!' & n1c != ' ' & (Tecla!='+' & Tecla!='-' & Tecla!='/' & Tecla!='x' & Tecla!='='& Tecla!='C' & Tecla!='!' & Tecla!='^' & Tecla!='=')){
                     DireccionaLCD(0x82);
                     EscribeLCD_c(Tecla);
                     n2c=Tecla;
@@ -150,17 +152,23 @@ void main(void){
                     }
                     break;
                 case '!':
-                    r = n1;
-                    for(n1;n1>1;n1--){
-                        r = r * (n1-1);
+                    if (n1==0) r = 1;
+                    else{
+                        r = n1;
+                        for(n1;n1>1;n1--){
+                            r = r * (n1-1);
+                        }
                     }
                     partdecl = r*100;
                     break;
                 case '^':
                     r = n1;
-                    n2 = n2-1;
-                    for(n2;n2>0;n2--){
-                        r = r * n1;
+                    if(n2==0) r = 1;
+                    else{
+                        n2 = n2-1;
+                        for(n2;n2>0;n2--){
+                            r = r * n1;
+                        }
                     }
                     partdecl = r*100;
                     break;
@@ -258,7 +266,7 @@ unsigned char LeerTeclado(void){
     }
     }
     }
-    return '?';
+    return ' ';
 }
 
 void ColorRGB(void){
@@ -308,7 +316,7 @@ void __interrupt() ISR(void){
     if(contador == 20){
         if(!verificador){   
             BorraLCD();
-            MensajeLCD_Word("En Resposo");
+            MensajeLCD_Word("En Reposo");
             SLEEP();
             while(1);
         }

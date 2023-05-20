@@ -127,12 +127,7 @@ DireccionaLCD(0x80);
 void ComandoLCD(unsigned char data){
 //Función que envia cualquier comando al LCD
 	RS = 0;
-    Datos = data & 0xF0;
-    E = 1;
-    __delay_us(5);
-    E = 0;
-    __delay_us(5);
-    Datos = ((data & 0x0F) << 4);
+    Datos = data;
     E = 1;
     __delay_us(5);
     E = 0;
